@@ -10,7 +10,7 @@ import (
 // This example shows how to use file operations with gexe.
 func main() {
 	gexe.SetVar("file", "/tmp/warofworlds.txt")
-	fmt.Prinln(gexe.Eval("Downloading and saving War of the Worlds text: $file"))
+	fmt.Println(gexe.Eval("Downloading and saving War of the Worlds text: $file"))
 
 	// Download text and save it locally
 	cmd := `wget -O $file  https://www.gutenberg.org/cache/epub/36/pg36.txt`
